@@ -41,10 +41,10 @@
 //     console.log(i);
 //     i++;
 // }
-const cars = ['nissan juke'];
-cars[2]='BMW x7';
-cars.push('Porsche Taycan');
-cars.shift('tesla x');
+// const cars = ['nissan juke'];
+// cars[2]='BMW x7';
+// cars.push('Porsche Taycan');
+// cars.shift('tesla x');
 // const sold = cars.pop();
 // console.log(sold);
 //
@@ -78,3 +78,12 @@ cars.shift('tesla x');
 // function compare (a, b){
 //     return a-b;
 // }
+(function() {
+    let products;
+
+    fetch('products.json')
+    .then (response => response.json())
+        .then(productsData => products = productsData);
+
+    
+})();
